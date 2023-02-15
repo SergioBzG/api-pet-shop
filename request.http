@@ -1,0 +1,43 @@
+
+#Registro de mascotas
+# POST http://localhost:3333/petshop/registro-mascotas
+# Content-Type: application/json
+
+# {
+#     "codigo_animal": 104,
+#     "nombre_animal": "Pegazo",
+#     "especie": 2,
+#     "raza": 1,
+#     "genero": 2,
+#     "edad": 3
+# }
+
+
+#Consultar todos los animales (todas las mascotas)
+# GET http://localhost:3333/petshop/listar-mascotas
+# Content-Type: application/json
+
+#Filtrar por especie
+# GET http://localhost:3333/petshop/filtar-especie/2
+# Content-Type: application/json
+
+# Filtrar por edad (Obtener las mascotas que tengan una edad menor a 8 años)
+# GET http://localhost:3333/petshop/filtar-edad
+# Content-Type: application/json
+
+#Modificar mascota (de debe poner el id de la mascota que se quiere actualizar)
+# PUT http://localhost:3333/petshop/actualizar-mascota/102
+# Content-Type: application/json
+
+# {
+#     "nombre_animal": "MelinaAct2",
+#     "especie": 2,
+#     "raza": 1,
+#     "genero": 2,
+#     "edad": 6
+# }
+
+#Eliminar un registro
+DELETE http://localhost:3333/petshop/eliminar-mascota/102
+Content-Type: application/json
+
